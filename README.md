@@ -1,25 +1,36 @@
-# CA994 Countdown
+# 距离 Emily 登机时间 · CA994 Countdown
 
-一个无需后端、可直接部署到 GitHub Pages 的实时倒计时应用。
+[![Live App](https://img.shields.io/badge/Live_App-打开倒计时-0969da?style=for-the-badge)](https://xudaniel.github.io/ca994-countdown/)
+[![Deploy to GitHub Pages](https://github.com/xudaniel/ca994-countdown/actions/workflows/pages.yml/badge.svg)](https://github.com/xudaniel/ca994-countdown/actions/workflows/pages.yml)
 
-目标时间：Emily 登机时间，北京时间 **2026年8月28日 01:15**。
+一个轻量、实时更新的登机倒计时应用。无需后端，可直接通过 GitHub Pages 访问。
 
-## 本地预览
+## Live App
 
-直接用浏览器打开 `index.html`。倒计时以绝对时间计算，不依赖访客设备的显示时区。
+### [打开实时倒计时 →](https://xudaniel.github.io/ca994-countdown/)
 
-## GitHub Pages 部署
+| 项目 | 时间 |
+| --- | --- |
+| Emily 登机时间 | **2026年8月28日 01:15（北京时间）** |
+| 对应多伦多时间 | 2026年8月27日 13:15（EDT） |
+| CA994 计划起飞 | 2026年8月28日 04:15（北京时间） |
 
-1. 创建 GitHub 仓库并推送本目录到 `main` 分支。
-2. 在仓库的 **Settings → Pages → Build and deployment** 中将 Source 设为 **GitHub Actions**。
-3. `Deploy to GitHub Pages` 工作流会发布静态页面。
+## 功能
 
-## 时间基准
+- 实时显示剩余小时、分钟和秒
+- 使用带时区的绝对时间计算，不受访客设备显示时区影响
+- 支持桌面和手机浏览器
+- 静态单页应用，无追踪、无登录、无后端
+- 通过 GitHub Actions 自动部署到 GitHub Pages
 
-- Emily 登机时间：2026-08-28 01:15（Asia/Shanghai）
-- 对应多伦多时间：2026-08-27 13:15（EDT）
-- CA994 计划起飞：2026-08-28 04:15（北京时间）
+## 本地打开
+
+下载仓库后，直接使用浏览器打开 `index.html` 即可。
+
+## 自动部署
+
+每次更新 `main` 分支后，`Deploy to GitHub Pages` 工作流会自动发布最新版本。
 
 ## License
 
-MIT
+[MIT](LICENSE)
